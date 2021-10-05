@@ -1,13 +1,8 @@
 puts "Give me a number"
-
 userNum = gets.to_i
 
-finalNum = userNum
+def always_three(number)
+  (((number + 5) * 2 - 4) / 2 - number)
+end
 
-finalNum+=5
-finalNum*=2
-finalNum-=4
-finalNum/=2
-finalNum -= userNum
-
-puts "Always #{finalNum}"
+puts "Always " + always_three(userNum).to_s
